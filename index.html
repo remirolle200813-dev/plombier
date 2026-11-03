@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>Vasseur Plomberie Express, dépannage à Paris</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#0a6cff;--bl2:#e6f0ff;--bl3:#f4f8ff;--ink:#0b1b33;--mute:#5b6b85;--co:#ff6b57;--line:#dbe5f3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px;height:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 18px/1.6 'Plus Jakarta Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-weight:800;margin:0;letter-spacing:-.04em;line-height:1}
+a{color:inherit;text-decoration:none}:focus-visible{outline:3px solid var(--bl);outline-offset:3px}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;transition:all .4s}
+nav.s{background:rgba(255,255,255,.85);backdrop-filter:blur(14px);padding:10px 5vw;box-shadow:0 1px 0 var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.03em}
+.logo svg{width:26px;height:26px}
+.btn{display:inline-block;border:0;cursor:pointer;font:700 17px inherit;font-family:inherit;color:#fff;background:var(--co);padding:16px 30px;border-radius:999px;transition:transform .3s,box-shadow .3s;box-shadow:0 10px 24px rgba(255,107,87,.3)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(255,107,87,.4)}
+.btn.s2{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}.btn.s2:hover{box-shadow:inset 0 0 0 2px var(--bl)}
+nav .btn{padding:11px 22px;font-size:16px}
+.nb{display:flex;gap:10px;align-items:center}.btn.bl{background:var(--bl);box-shadow:0 10px 24px rgba(10,108,255,.3)}.btn.bl:hover{box-shadow:0 16px 32px rgba(10,108,255,.4)}.m{display:none}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:30px;padding:120px 9vw 70px 5vw;background:radial-gradient(circle at 85% 20%,var(--bl2),transparent 55%),radial-gradient(circle at 0 100%,#fff0ed,transparent 45%),#fff;overflow:hidden}
+.ln{display:block;overflow:hidden;padding-bottom:.1em}.ln>span{display:block;transform:translateY(110%);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.on .ln>span{transform:none}.ln:nth-child(2)>span{transition-delay:.12s}.ln:nth-child(3)>span{transition-delay:.24s}
+.hero h1{font-size:clamp(50px,8vw,118px)}
+.hero p{max-width:480px;color:var(--mute);font-size:20px;margin:26px 0 32px}
+.fade{opacity:0;transform:translateY(24px);transition:all 1s .6s cubic-bezier(.2,.8,.2,1)}.on .fade{opacity:1;transform:none}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.ok{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;font-weight:500;font-size:15px;color:var(--mute)}.ok span:before{content:"✓";color:var(--bl);font-weight:800;margin-right:8px}
+.vis{position:relative;height:440px}
+.pw{position:absolute}.card{background:#fff;border-radius:24px;padding:22px 24px;box-shadow:0 30px 60px rgba(10,60,140,.14),0 0 0 1px var(--line);animation:fl 6s ease-in-out infinite alternate}
+@keyframes fl{to{translate:0 -14px}}
+.c1{width:290px;top:20px;right:0}.c2{width:230px;top:230px;left:0}.c2 .card{animation-delay:-3s}
+.card small{display:block;color:var(--mute);font-size:14px;font-weight:500}.card b{display:block;font-size:26px;font-weight:800;letter-spacing:-.03em;margin:4px 0 12px}
+.stars{color:#ffb400;letter-spacing:4px;font-size:22px;margin-bottom:6px}
+.tag{display:inline-block;background:var(--bl2);color:var(--bl);font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px}
+section{padding:130px 5vw;position:relative}
+h2{font-size:clamp(40px,6.2vw,84px);margin-bottom:56px;max-width:980px}
+.rv{opacity:0;transform:translateY(50px);transition:opacity 1s,transform 1s cubic-bezier(.2,.8,.2,1)}.rv.on{opacity:1;transform:none}
+.sv2{background:var(--bl3)}
+.rows{border-top:2px solid var(--line);margin-right:4vw}
+.row{border-bottom:2px solid var(--line);position:relative}
+.row:after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--bl);transition:width .7s cubic-bezier(.2,.8,.2,1)}
+.row.open:after,.row:hover:after{width:100%}
+.rb{width:100%;background:none;border:0;color:inherit;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:30px 0;font:800 clamp(30px,4.6vw,62px) 'Plus Jakarta Sans',sans-serif;letter-spacing:-.04em;transition:padding-left .5s cubic-bezier(.2,.8,.2,1),color .3s}
+.rb:hover{padding-left:18px;color:var(--bl)}
+.rb b{flex:none;width:48px;height:48px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2px var(--line);display:grid;place-items:center;font:500 28px 'Plus Jakarta Sans';color:var(--bl);transition:all .5s}
+.open .rb b{transform:rotate(45deg);background:var(--bl);color:#fff;box-shadow:none}
+.rd{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s cubic-bezier(.2,.8,.2,1)}.open .rd{grid-template-rows:1fr}
+.rd>div{overflow:hidden}.rd p{margin:0 0 30px;max-width:560px;color:var(--mute);font-size:19px}
+.sim{display:grid;grid-template-columns:1.3fr 1fr;border-radius:36px;overflow:hidden;box-shadow:0 40px 90px rgba(10,60,140,.16),0 0 0 1px var(--line);margin-right:4vw}
+.sim>div{padding:44px}.sim h3{font:700 16px 'Plus Jakarta Sans';letter-spacing:0;color:var(--mute);margin:30px 0 12px}.sim h3:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{cursor:pointer;border:0;box-shadow:inset 0 0 0 2px var(--line);background:#fff;color:var(--ink);font:600 16px inherit;font-family:inherit;padding:12px 22px;border-radius:999px;transition:all .25s}
+.chip:hover{box-shadow:inset 0 0 0 2px var(--bl)}.chip[aria-pressed=true]{background:var(--bl);color:#fff;box-shadow:0 8px 20px rgba(10,108,255,.35)}
+.res{background:linear-gradient(150deg,#1479ff,#0a4fd6);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px}
+.price{font:800 clamp(72px,9vw,124px)/1 'Plus Jakarta Sans',sans-serif;letter-spacing:-.05em}
+.res small{opacity:.8}
+.fin{margin:0 3vw 40px;border-radius:40px;background:linear-gradient(150deg,#1479ff,#0a4fd6);color:#fff;text-align:center;padding:110px 5vw;overflow:hidden}
+.fin h2{margin-inline:auto}.fin .big{display:block;font:800 clamp(46px,9vw,130px) 'Plus Jakarta Sans';letter-spacing:-.05em;margin:6px 0 30px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}.fin .big:hover{transform:scale(1.04)}
+footer{padding:10px 5vw 36px;text-align:center;color:var(--mute);font-size:15px}
+.zn h2{font-size:clamp(38px,5.4vw,72px);margin-bottom:22px}.zn p{color:var(--mute);max-width:520px;margin:0 0 30px}
+.pl{display:flex;flex-wrap:wrap;gap:12px;max-width:900px}.pl .chip{padding:12px 22px;font-size:16px}
+.st{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-top:34px;font-size:20px;font-weight:800}.st span{color:var(--bl);font-weight:700}
+#lp{position:absolute;top:0;left:0;width:100%;z-index:6;pointer-events:none;overflow:visible}
+.fl{animation:flw 1.6s linear infinite}@keyframes flw{to{stroke-dashoffset:-37}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-right:5vw}.vis{height:340px}.c1{right:auto;left:30%;top:0;width:250px}.c2{top:170px}.sim{grid-template-columns:1fr}.sim>div{padding:28px}section{padding:90px 5vw}.fin{padding:80px 5vw}}
+@media(max-width:600px){nav .btn{padding:10px 16px;font-size:15px}.d{display:none}.m{display:inline}.nb{gap:8px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.ln>span,.fade{transform:none;opacity:1}.rv{opacity:1;transform:none}}
+</style></head><body>
+<svg id="lp" aria-hidden="true"><defs><mask id="mk" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><path class="lp dz" data-w="6" stroke="#fff" fill="none" stroke-linecap="round"/></mask></defs>
+<path class="lp" data-w="12" stroke="#b9cbe4" fill="none"/><path class="lp" data-w="8" stroke="#f1f6fd" fill="none"/><path class="lp" data-w="0" id="pc" stroke="#d6e4f7" fill="none"/>
+<path class="lp dz" data-w="2" stroke="#0a6cff" opacity=".28" fill="none" stroke-linecap="round"/><path class="lp dz" data-w="-5" stroke="#0a6cff" fill="none" stroke-linecap="round"/>
+<g mask="url(#mk)"><path class="lp fl" data-w="-10" stroke="#fff" stroke-dasharray="3 34" opacity=".85" fill="none" stroke-linecap="round"/></g><g id="fit"></g></svg>
+
+<nav id="nav"><a class="logo" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C12 2 4 11 4 16a8 8 0 0016 0C20 11 12 2 12 2z" fill="#0a6cff"/><path d="M8.5 16a3.5 3.5 0 003.5 3.5" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Vasseur</a><div class="nb"><a class="btn bl" href="#devis">Estimer<span class="d"> mon prix</span></a><a class="btn" href="tel:+33100000000"><span class="d">01 00 00 00 00</span><span class="m">Appeler</span></a></div></nav>
+
+<header class="hero on" id="top"><div><h1><span class="ln"><span>Une fuite ?</span></span><span class="ln"><span>On arrive</span></span><span class="ln"><span>en 45 minutes.</span></span></h1>
+<p class="fade">Plombier à Paris et petite couronne, jour et nuit. Le prix est annoncé avant de commencer, le travail garanti 2 ans.</p>
+<div class="cta fade"><a class="btn" href="tel:+33100000000">Appeler maintenant</a><a class="btn s2" href="#devis">Estimer mon prix</a></div>
+<div class="ok fade"><span>Devis gratuit</span><span>7j/7, 24h/24</span><span>Garantie 2 ans</span></div></div>
+<div class="vis" aria-hidden="true"><div class="pw c1" data-s=".1"><div class="card"><small>Avis clients</small><b>4,9 sur 5</b><div class="stars">★★★★★</div><small>2 380 avis vérifiés</small></div></div>
+<div class="pw c2" data-s=".2"><div class="card"><span class="tag">Devis accepté</span><b style="margin-top:12px">89 €</b><small style="margin:0">Fuite, sous 1h, appartement</small></div></div></div></header>
+
+<section class="sv2" id="services"><h2 class="rv">Tout ce qui fuit, chauffe ou bouche.</h2>
+<div class="rows rv">
+<div class="row open"><button class="rb" aria-expanded="true">Fuites d'eau<b>+</b></button><div class="rd"><div><p>Recherche sans casse inutile, réparation propre, sols et peinture protégés. Arrivée en 45 minutes en moyenne dans Paris.</p></div></div></div>
+<div class="row"><button class="rb" aria-expanded="false">Chauffe-eau et chaudière<b>+</b></button><div class="rd"><div><p>Entretien, réparation ou remplacement, toutes marques. Eau chaude rétablie le jour même dans la grande majorité des cas.</p></div></div></div>
+<div class="row"><button class="rb" aria-expanded="false">Débouchage<b>+</b></button><div class="rd"><div><p>WC, douches, éviers, colonnes. Furet ou hydrocurage haute pression, avec caméra de contrôle si besoin.</p></div></div></div>
+<div class="row"><button class="rb" aria-expanded="false">Salle de bain<b>+</b></button><div class="rd"><div><p>Conception, plomberie, pose et finitions par le même artisan, du plan à la première douche.</p></div></div></div>
+</div></section>
+
+<section class="zn" id="zone"><h2 class="rv">On intervient près de chez vous.</h2><p class="rv">Paris et toute la petite couronne, jour et nuit. Choisissez votre ville pour voir le délai moyen d'arrivée.</p><div class="pl rv" id="pl"></div><div class="st rv"><b id="zv">Paris</b><span id="zt"></span></div></section>
+
+<section id="devis"><h2 class="rv">Votre prix en dix secondes.</h2>
+<div class="sim rv"><div><h3>Votre besoin</h3><div class="chips" data-k="svc"></div><h3>Délai</h3><div class="chips" data-k="when"></div><h3>Logement</h3><div class="chips" data-k="home"></div></div>
+<div class="res"><small>Estimation à partir de</small><div class="price" id="price">0 €</div><span id="detail"></span><small>Indicatif, confirmé sur place avant de commencer.</small><a class="btn" href="tel:+33100000000" style="margin-top:18px">Réserver ce créneau</a></div></div></section>
+
+<section class="fin" style="padding-block:110px"><h2 class="rv">Une urgence ne prévient pas.</h2><a class="big rv" href="tel:+33100000000">01 00 00 00 00</a><a class="btn" href="tel:+33100000000">Appeler maintenant</a></section>
+<footer>Vasseur Plomberie Express, entreprise fictive créée pour démonstration.</footer>
+<script>
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,nav=document.getElementById('nav'),P=[...document.querySelectorAll('[data-s]')];let mx=0,my=0,tk=0;
+function px(){const y=scrollY;nav.classList.toggle('s',y>40);if(!RM)P.forEach(p=>p.style.transform=`translate3d(${mx*(+p.dataset.s)*60}px,${y*(+p.dataset.s)*-.6+my*(+p.dataset.s)*40}px,0)`);tk=0}
+function req(){if(!tk)tk=requestAnimationFrame(px)}
+addEventListener('scroll',req,{passive:true});addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;req()});px();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.row').forEach(r=>r.querySelector('.rb').onclick=()=>{const o=r.classList.contains('open');document.querySelectorAll('.row').forEach(x=>{x.classList.remove('open');x.querySelector('.rb').setAttribute('aria-expanded','false')});if(!o){r.classList.add('open');r.querySelector('.rb').setAttribute('aria-expanded','true')}});
+const O={svc:[['Fuite',89,'fuite'],['Débouchage',120,'débouchage'],['Chauffe-eau',390,'chauffe-eau'],['Salle de bain',4200,'salle de bain']],when:[['Cette semaine',1,'planifié'],['Sous 24h',1.25,'sous 24h'],['Urgence 1h',1.7,'urgence']],home:[['Appartement',1,'appartement'],['Maison',1.3,'maison']]};
+const S={svc:0,when:0,home:0};let shown=0,tgt=0;
+document.querySelectorAll('.chips').forEach(box=>{const k=box.dataset.k;O[k].forEach((o,i)=>{const b=document.createElement('button');b.className='chip';b.textContent=o[0];b.dataset.i=i;b.onclick=()=>{S[k]=i;upd()};box.appendChild(b)})});
+function upd(){document.querySelectorAll('.chips').forEach(box=>box.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.i===S[box.dataset.k])));
+tgt=Math.round(O.svc[S.svc][1]*O.when[S.when][1]*O.home[S.home][1]/5)*5;
+document.getElementById('detail').textContent=[O.svc[S.svc][2],O.when[S.when][2],O.home[S.home][2]].join(', ');
+if(RM){shown=tgt;draw();return}(function a(){shown+=(tgt-shown)*.12;if(Math.abs(tgt-shown)<1)shown=tgt;draw();if(shown!==tgt)requestAnimationFrame(a)})()}
+function draw(){document.getElementById('price').textContent=Math.round(shown).toLocaleString('fr-FR')+' €'}
+upd();
+/* Zone d'intervention : villes et délai moyen */
+const Z=[['Paris',30],['Neuilly-sur-Seine',35],['Levallois-Perret',35],['Clichy',35],['Saint-Ouen',35],['Saint-Denis',45],['Pantin',40],['Montreuil',40],['Vincennes',40],['Ivry-sur-Seine',40],['Montrouge',35],['Issy-les-Moulineaux',40],['Boulogne-Billancourt',35],['Courbevoie',40],['Nanterre',45]];
+const pl=document.getElementById('pl'),pb=[];
+Z.forEach((z,i)=>{const b=document.createElement('button');b.className='chip';b.textContent=i?z[0]:'Paris, 20 arrondissements';b.onclick=()=>sel(i);b.onpointerenter=e=>{if(e.pointerType==='mouse')sel(i)};pl.appendChild(b);pb.push(b)});
+function sel(i){const z=Z[i];pb.forEach((b,j)=>b.setAttribute('aria-pressed',j===i));document.getElementById('zv').textContent=z[0];document.getElementById('zt').textContent='Arrivée en environ '+z[1]+' min'}
+sel(0);
+/* Grand tuyau : serpente entre les sections, se remplit au scroll, l'eau circule */
+const lp=document.getElementById('lp'),mk=document.getElementById('mk'),pc=document.getElementById('pc');let L=0,cur=0,tg=0,run=0,dz=[],bt=0;
+function build(){bt=0;lp.style.height='0px';const H=document.documentElement.scrollHeight,W=innerWidth,m=W>800,pw=m?16:9,r=m?34:20,xR=W-(m?36:13),xL=m?36:13,q=s=>document.querySelector(s),f=q('.fin');
+const ys=[q('.sv2').offsetTop-48,q('#devis').offsetTop+56,f.offsetTop-40],yE=f.offsetTop+f.offsetHeight-24,col=(x,y)=>`<rect x="${x-pw/2-8}" y="${y-5}" width="${pw+16}" height="10" rx="3" fill="#ff6b57"/>`;
+let d=`M${xR} -10`,side=true,fit='';
+ys.forEach(y=>{if(side)d+=`V${y-r}A${r} ${r} 0 0 1 ${xR-r} ${y}H${xL+r}A${r} ${r} 0 0 0 ${xL} ${y+r}`;else d+=`V${y-r}A${r} ${r} 0 0 0 ${xL+r} ${y}H${xR-r}A${r} ${r} 0 0 1 ${xR} ${y+r}`;fit+=col(side?xR:xL,y-r-30)+col(side?xL:xR,y+r+30);side=!side});
+d+=`V${yE}`;fit+=`<circle cx="${side?xR:xL}" cy="${yE}" r="${pw/2+7}" fill="#ff6b57"/>`;
+lp.setAttribute('viewBox',`0 0 ${W} ${H}`);lp.style.height=H+'px';mk.setAttribute('width',W);mk.setAttribute('height',H);document.getElementById('fit').innerHTML=fit;
+lp.querySelectorAll('.lp').forEach(p=>{p.setAttribute('d',d);p.setAttribute('stroke-width',pw+(+p.dataset.w))});
+const oL=L;L=pc.getTotalLength();dz=[...lp.querySelectorAll('.dz')];dz.forEach(p=>p.setAttribute('stroke-dasharray',`${L} ${L+5}`));cur=oL?cur/oL*L:0;go()}
+function paint(){dz.forEach(p=>p.setAttribute('stroke-dashoffset',L-cur))}
+function step(){cur+=(tg-cur)*.14;if(Math.abs(tg-cur)<.5)cur=tg;paint();run=cur!==tg?requestAnimationFrame(step):0}
+function go(){const mxs=document.documentElement.scrollHeight-innerHeight,k=mxs>0?Math.min(1,scrollY/mxs):1,ref=scrollY+innerHeight*(.7+.3*k*k*k);let a=0,b=L;for(let i=0;i<14;i++){const c=(a+b)/2;if(pc.getPointAtLength(c).y<ref)a=c;else b=c}if(ref>=pc.getPointAtLength(L).y)a=L;tg=RM?L:a;if(RM){cur=L;paint()}else if(!run)run=requestAnimationFrame(step)}
+function rb(){if(!bt)bt=requestAnimationFrame(build)}
+addEventListener('scroll',go,{passive:true});addEventListener('resize',rb);addEventListener('load',rb);document.fonts&&document.fonts.ready.then(rb);new ResizeObserver(rb).observe(document.body);build();
+</script></body></html>
